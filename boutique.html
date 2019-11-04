@@ -1,0 +1,283 @@
+<!DOCTYPE html>     <!-- déclaration du doctype HTML5 -->
+<html lang="en">    <!-- il faut préciser la langue du document html -->
+  <head>            <!-- entête: titre, feuilles de style, scripts, etc. -->
+    <meta charset="utf-8" lang="fr">  <!-- encodage des caractères : obligatoire ! -->
+    <title>Les créations de Pierre</title>    <!-- titre de la page: obligatoire -->
+    <link rel="stylesheet" href="styleBoutique.css"> <!-- feuille de style: optionnel -->
+ 
+    <script>
+			window.addEventListener('load', function () {
+				function HD(){
+                var fen = document.getElementById('cadre1');
+				fen.scrollTo(1000,0);
+			  	console.log(fen);
+			  	//console.log('test scroll');
+				}
+				function HG(){
+                var fen = document.getElementById('cadre1');
+				fen.scrollTo(0,0);
+				}
+				function BG(){
+                var fen = document.getElementById('cadre2');
+				fen.scrollTo(0,0);
+				}
+				function BD(){
+                var fen = document.getElementById('cadre2');
+                console.log(fen);
+				fen.scrollTo(1000,0);
+				}
+				var scrollHG = document.getElementById('scrollHG');
+				scrollHG.onclick = HG;
+				var scrollHD = document.getElementById('scrollHD');
+				scrollHD.onclick = HD;
+				var buscrollBGton21 = document.getElementById('scrollBG');
+				scrollBG.onclick = BG;
+				var scrollBD = document.getElementById('scrollBD');
+				scrollBD.onclick = BD;
+			});	
+    </script>
+    
+  </head>
+  
+<body>
+<div id="container">
+    <!-- contenu de la page -->
+
+<!--<p id="clem"></p>-->
+<header>
+    
+
+        <a href="./index.html">
+        <h1>Pierre Maupin</h1>
+        </a>
+      </ul>
+    
+      <ul id="choixPage">
+      <li>
+        <a href="./index.html">
+        <p id="onglet">Home</p>
+        </a>
+        
+      </li>
+      <li>
+        <a href="./resume.html">
+        <p id="onglet">Resume</p>
+        </a>
+        
+      </li>
+      <li>
+        <a href="./application.html">
+        <p id="onglet">Apps</p>
+        </a>
+        
+      </li>
+      <li>
+        <a href="./boutique.html">
+        <p id="ongletActuel">Designs</p>
+        </a>
+        
+      </li>
+      </ul>
+    
+</header>
+
+<ul id="surCadre">
+    <li id="desc">
+        <ul>
+            <li id="titre">Low poly</li>
+            <li id="sousdesc">Designs low poly que mis en ligne 
+                sur plusieurs site de Print On Demand</li>
+            <li>
+                    <a id="test" href="https://www.redbubble.com/fr/people/pierrempn?asc=u" target="_blank">
+                    <img src="./img/icon/redbubble2.png" id="logo">
+                    </a>
+            </li>
+            <li>
+                    <a href="https://society6.com/pierrempn" target="_blank">
+                    <img src="./img/icon/society62.png" id="logo">
+                    </a>
+            </li>
+            <li>
+                    <a href="https://pierrempn.threadless.com/" target="_blank">
+                    <img src="./img/icon/threadless.png" id="logo">
+                    </a>
+            </li>
+        </ul>
+    </li>
+    <li id="fleche">
+        <button id="scrollHG" class="gauche"></button>
+    </li>
+    <li>
+        <table>
+        <tbody id="cadre1">
+        <tr>
+            <td>
+                <img src="./img/portfolio/husky.png" id="Designs">
+            </td
+            ><td>
+                <img src="./img/portfolio/colibri.png" id="Designs">
+            </td>
+            <td>
+                <img src="./img/portfolio/cerf.png" id="Designs">
+            </td>
+            <td>
+                <img src="./img/portfolio/panda.png" id="Designs">
+            </td>
+            <td>
+                <img src="./img/portfolio/abeille.png" id="Designs">
+            </td>
+            <td>
+                <img src="./img/portfolio/ronlow.png" id="Designs">
+            </td
+            ><td>
+                <img src="./img/portfolio/harrylow.png" id="Designs">
+            </td>
+            <td>
+                <img src="./img/portfolio/hermionelow.png" id="Designs">
+            </td>
+            <td>
+                <img src="./img/portfolio/panda.png" id="Designs">
+            </td>
+            <td>
+                <img src="./img/portfolio/panda.png" id="Designs">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="./img/portfolio/pandaroux.png" id="Designs">
+            </td
+            ><td>
+                <img src="./img/portfolio/koala.png" id="Designs">
+            </td>
+            <td>
+                <img src="./img/portfolio/herisson.png" id="Designs">
+            </td>
+            <td>
+                <img src="./img/portfolio/loutre.png" id="Designs">
+            </td>
+            <td>
+                <img src="./img/portfolio/chouette.png" id="Designs">
+            </td>
+            <td>
+                <img src="./img/portfolio/thor.png" id="Designs">
+            </td
+            ><td>
+                <img src="./img/portfolio/rocket.png" id="Designs">
+            </td>
+            <td>
+                <img src="./img/portfolio/groot.png" id="Designs">
+            </td>
+            <td>
+                <img src="./img/portfolio/loutre.png" id="Designs">
+            </td>
+            <td>
+                <img src="./img/portfolio/loutre.png" id="Designs">
+            </td>
+            </tr>
+        </tbody>
+        </table>
+    </li>
+    <li id="fleche">
+        <button id="scrollHD" class="droite"></button>
+    </li>
+</ul>
+
+<ul id="surCadre">
+        <li id="desc">
+            <ul>
+                <li id="titre">Papercraft</li>
+                <li id="sousdesc">Patrons de pliage 
+                    papercraft que proposés au téléchargement 
+                    sur Etsy</li>
+                <li>
+                        <a href="https://www.etsy.com/fr/shop/LesCreationsDePierre" target="_blank">
+                        <img src="./img/icon/etsy.png" id="logo">
+                        </a>
+                </li>
+                <li id="sousdesc">Les modèles utilisés sont 
+                    des modèles gratuit au téléchargement qui sont ensuite 
+                    travaillé pour les rendre low poly avce Blender et faire 
+                    un patron de collage avec le logiciel pepakura
+
+                </li>
+            </ul>
+        </li>
+        <li id="fleche">
+        <button id="scrollBG" class="gauche"></button>
+        </li>
+        <li>
+            <table>
+            <tbody id="cadre2">
+            <tr>
+                <td>
+                    <img src="./img/papercraft/chat.png" id="Designs">
+                </td
+                ><td>
+                    <img src="./img/papercraft/labrador.png" id="Designs">
+                </td>
+                <td>
+                    <img src="./img/papercraft/kangourou.png" id="Designs">
+                </td>
+                <td>
+                    <img src="./img/papercraft/ours.png" id="Designs">
+                </td>
+                <td>
+                    <img src="./img/papercraft/lapin.png" id="Designs">
+                </td>
+                <td>
+                    <img src="./img/papercraft/torse.png" id="Designs">
+                </td
+                ><td>
+                    <img src="./img/papercraft/torse2.png" id="Designs">
+                </td>
+                <td>
+                    <img src="./img/papercraft/nains.png" id="Designs">
+                </td>
+                <td>
+                    <img src="./img/papercraft/archer.png" id="Designs">
+                </td>
+                <td>
+                    <img src="./img/papercraft/guerrier.png" id="Designs">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./img/papercraft/torse.png" id="Designs">
+                </td
+                ><td>
+                    <img src="./img/papercraft/torse2.png" id="Designs">
+                </td>
+                <td>
+                    <img src="./img/papercraft/nains.png" id="Designs">
+                </td>
+                <td>
+                    <img src="./img/papercraft/archer.png" id="Designs">
+                </td>
+                <td>
+                    <img src="./img/papercraft/guerrier.png" id="Designs">
+                </td>
+                <td>
+                    <img src="./img/papercraft/chat.png" id="Designs">
+                </td
+                ><td>
+                    <img src="./img/papercraft/chat.png" id="Designs">
+                </td>
+                <td>
+                    <img src="./img/papercraft/chat.png" id="Designs">
+                </td>
+                <td>
+                    <img src="./img/papercraft/chat.png" id="Designs">
+                </td>
+                <td>
+                    <img src="./img/papercraft/chat.png" id="Designs">
+                </td>
+                </tr>
+            </tbody>
+            </table>
+    </li>
+    <li id="fleche">
+    <button id="scrollBD" class="droite"></button>
+    </li>
+</ul>
+
+</html>

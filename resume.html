@@ -1,0 +1,599 @@
+<!DOCTYPE html>     <!-- déclaration du doctype HTML5 -->
+<html lang="en">    <!-- il faut préciser la langue du document html -->
+  <head>            <!-- entête: titre, feuilles de style, scripts, etc. -->
+    <meta charset="utf-8" lang="fr">  <!-- encodage des caractères : obligatoire ! -->
+    <title>Pierre Maupin</title>    <!-- titre de la page: obligatoire -->
+    <link rel="stylesheet" href="styleResume.css"> <!-- feuille de style: optionnel -->
+	
+	<!--<script src="./jquery.js" type="text/javascript">
+		object.onload = function scroll() {
+		$(window).scrollTo(500, 500);
+		console.log('test');
+		}
+	</script>-->
+	<script>
+			window.addEventListener('load', function () {
+				//window.scrollTo(500, 500);
+			  	console.log('test scroll');
+				function scroll1(){
+				window.scrollTo(0,0);
+				}
+				function scroll2(){
+				window.scrollTo(0,550);
+				}
+				function scroll3(){
+				window.scrollTo(0,1100);
+				}
+				var button12 = document.getElementById('scroll12');
+				button12.onclick = scroll2;
+				var button13 = document.getElementById('scroll13');
+				button13.onclick = scroll3;
+				var button21 = document.getElementById('scroll21');
+				button21.onclick = scroll1;
+				var button23 = document.getElementById('scroll23');
+				button23.onclick = scroll3;
+				var button31 = document.getElementById('scroll31');
+				button31.onclick = scroll1;
+				var button32 = document.getElementById('scroll32');
+				button32.onclick = scroll2;
+			});	
+	</script>
+
+  </head>
+  <body>
+<div id="container">
+    <!-- contenu de la page -->
+<header>
+	<a href="./index.html">
+	<h1>Pierre Maupin</h1>
+	</a>
+
+	<ul id="choixPage">
+	<li>
+		<a href="./index.html">
+		<p id="onglet">Home</p>
+		</a>
+	
+	</li>
+	<li>
+		<a href="./resume.html">
+		<p id="ongletActuel">Resume</p>
+		</a>
+	
+	</li>
+	<li>
+		<a href="./application.html">
+		<p id="onglet">Apps</p>
+		</a>
+	
+	</li>
+	<li>
+		<a href="./boutique.html">
+		<p id="onglet">Designs</p>
+		</a>
+	
+	</li>
+	</ul>
+
+</header>
+
+<p id="mag"></p>
+
+<ul id="c">
+	<li>
+		<ul id="scrollpoint">
+			<li id="cbis"><button  style="cursor: pointer">O</button></li>
+			<li><button id="scroll12" style="cursor: pointer">•</button></li>
+			<li><button id="scroll13" style="cursor: pointer">•</button></li>
+		</ul>
+	</li>
+	<li>
+	<ul id="cadre">
+		<li>
+			<ul>
+				<li>
+					<p id="titre">Formation</p>
+				</li>
+				<li id= "Scroll">
+					<ul id="article">
+						<li id="date">
+							<p>2019</p>
+						</li>
+						<li>
+							<p id="point">°</p>
+						</li>
+						<li>
+							<ul id="bloc">
+							<li>
+								<p id="ST">Ecole d'Ingénieur Polytech Nantes</p>
+							</li>
+							<li>
+								<p>Option informatique décisionnelle</p>
+							</li>
+							<li>
+								<p id="Desc">4ème année</p>
+							</li>
+							</ul>
+						</li>
+					</ul>
+					<ul id="article">
+						<li id="date">
+							<p>2018</p>
+						</li>
+						<li>
+							<p id="point">°</p>
+						</li>
+						<li>
+							<ul id="bloc">
+							<li>
+								<p id="ST">Diplome GEII</p>
+							</li>
+							<li>
+								<p>Génie électrique et informatique industriel</p>
+							</li>
+							<li>
+								<p id="Desc">faire des machin électronique</p>
+							</li>
+							</ul>
+						</li>
+					</ul>
+					<ul id="article">
+						<li id="date">
+							<p>2016</p>
+						</li>
+						<li>
+							<p id="point">°</p>
+						</li>
+						<li>
+							<ul id="bloc">
+							<li>
+								<p id="ST">Baccalauréat STI2D</p>
+							</li>
+							<li>
+								<p>Lycée joliot curie Rennes</p>
+							</li>
+							<li>
+								<p id="Desc">Mention Bien</p>
+							</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<ul>
+				<li id="titre">
+					<p>Parcour Professionnel</p>
+				</li>
+				<li id= "Scroll">
+						<ul id="article">
+							<li id="date">
+								<p>2019</p>
+							</li>
+							<li>
+								<p id="point">°</p>
+							</li>
+							<li>
+								<ul id="bloc">
+								<li>
+									<p id="ST">Burger King</p>
+								</li>
+								<li>
+									<p>3 mois à Carquefou</p>
+								</li>
+								<li>
+									<p id="Desc">Equipier polyvalent en cuisine</p>
+								</li>
+								</ul>
+							</li>
+						</ul>
+						<ul id="article">
+							<li id="date">
+								<p>2018</p>
+							</li>
+							<li>
+								<p id="point">°</p>
+							</li>
+							<li>
+								<ul id="bloc">
+								<li>
+									<p id="ST">Altran Ouest</p>
+								</li>
+								<li>
+									<p>4 mois en stage de fin d'IUT et CDD</p>
+								</li>
+								<li>
+									<p id="Desc">Mission pour le ministère de la défense</p>
+								</li>
+								</ul>
+							</li>
+						</ul>
+						<ul id="article">
+							<li id="date">
+								<p>2016 & 2017</p>
+							</li>
+							<li>
+								<p id="point">°</p>
+							</li>
+							<li>
+								<ul id="bloc">
+								<li>
+									<p id="ST">Limagrain</p>
+								</li>
+								<li>
+									<p>Employé saisonnier</p>
+								</li>
+								<li>
+									<p id="Desc">Sélection experimentale de maïs</p>
+								</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+			</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+
+<ul id="c">
+	<li>
+		<ul id="scrollpoint">
+				<li><button id="scroll21" style="cursor: pointer">•</button></li>
+				<li><button style="cursor: pointer">O</button></li>
+				<li><button id="scroll23" style="cursor: pointer">•</button></li>
+		</ul>
+	</li>
+	<li>
+	<ul id="cadre">
+			<li>
+				<ul>
+					<li>
+						<p id="titre">Langues</p>
+					</li>
+					<li id= "Scroll">
+						<ul id="article">
+							<li id="date">
+								<p>Français</p>
+							</li>
+							<li>
+								<p id="point">°</p>
+							</li>
+							<li>
+								<ul id="bloc">
+								<li>
+									<p>Natif</p>
+								</li>
+								<li>
+									<p id="Desc">Né et vécu en France</p>
+								</li>
+								</ul>
+							</li>
+						</ul>
+						<ul id="article">
+							<li id="date">
+								<p>Anglais</p>
+							</li>
+							<li>
+								<p id="point">°</p>
+							</li>
+							<li>
+								<ul id="bloc">
+								<li>
+									<p>Très bon niveau</p>
+								</li>
+								<li>
+									<p id="Desc">TOEIC 980/990</p>
+								</li>
+								</ul>
+							</li>
+						</ul>
+						<ul id="article">
+							<li id="date">
+								<p>Espagnol</p>
+							</li>
+							<li>
+								<p id="point">°</p>
+							</li>
+							<li>
+								<ul id="bloc">
+								<li>
+									<p>Niveau scolaire</p>
+								</li>
+								<li>
+									<p id="Desc">6 ans au collège/lycée</p>
+								</li>
+								</ul>
+							</li>
+						</ul>
+						<ul id="article">
+								<li id="date">
+									<p>Japonais</p>
+								</li>
+								<li>
+									<p id="point">°</p>
+								</li>
+								<li>
+									<ul id="bloc">
+									<li>
+										<p>Débutant</p>
+									</li>
+									<li>
+										<p id="Desc">Première année en école d'ingénieur</p>
+									</li>
+									</ul>
+								</li>
+							</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<ul>
+					<li id="titre">
+						<p>Compétences</p>
+					</li>
+					<li id= "Scroll">
+							<ul id="article">
+								<li id="date">
+									<p>Logiciels</p>
+								</li>
+								<li>
+									<p id="point">°</p>
+								</li>
+								<li>
+									<ul id="bloc">
+									<li>
+										<p>Maîtrise de differents languages de programmation</p>
+									</li>
+									<li>
+										<p id="Desc">Python, C, C++, Java, Html, Css</p>
+									</li>
+									</ul>
+								</li>
+							</ul>
+							<ul id="article">
+								<li id="date">
+									<p>IA</p>
+								</li>
+								<li>
+									<p id="point">°</p>
+								</li>
+								<li>
+									<ul id="bloc">
+									<li>
+										<p>Machine learning, Algorythmes génétiques</p>
+									</li>
+									<li>
+										<p id="Desc">Prolog</p>
+									</li>
+									</ul>
+								</li>
+							</ul>
+							<ul id="article">
+								<li id="date">
+									<p>Gestion</p>
+								</li>
+								<li>
+									<p id="point">°</p>
+								</li>
+								<li>
+									<ul id="bloc">
+									<li>
+										<p>Gestion de projets</p>
+									</li>
+									<li>
+										<p id="Desc">Gantt, cahier des charges</p>
+									</li>
+									</ul>
+								</li>
+							</ul>
+							<ul id="article">
+									<li id="date">
+										<p>OS</p>
+									</li>
+									<li>
+										<p id="point">°</p>
+									</li>
+									<li>
+										<ul id="bloc">
+										<li>
+											<p>Maîtrise des systemes opérateurs</p>
+										</li>
+										<li>
+											<p id="Desc">Windows, Linux</p>
+										</li>
+										</ul>
+									</li>
+								</ul>
+						</li>
+				</ul>
+			</li>
+	</ul>
+	</li>
+</ul>
+
+<ul id="c">
+		<li>
+			<ul id="scrollpoint">
+					<li><button id="scroll31" style="cursor: pointer">•</button></li>
+					<li><button id="scroll32" style="cursor: pointer">•</button></li>
+					<li><button style="cursor: pointer">O</button></li>
+			</ul>
+		</li>
+		<li>
+		<ul id="cadre">
+				<li>
+					<ul>
+						<li>
+							<p id="titre">Sport</p>
+						</li>
+						<li id= "Scroll">
+							<ul id="article">
+								<li id="date">
+									<p>Tennis</p>
+								</li>
+								<li>
+									<p id="point">°</p>
+								</li>
+								<li>
+									<ul id="bloc">
+									<li>
+										<p>Tennis club de Melesse</p>
+									</li>
+									<li>
+										<p id="Desc">Pendant 9 ans</p>
+									</li>
+									</ul>
+								</li>
+							</ul>
+							<ul id="article">
+								<li id="date">
+									<p>Natation</p>
+								</li>
+								<li>
+									<p id="point">°</p>
+								</li>
+								<li>
+									<ul id="bloc">
+									<li>
+										<p>Club Cercle Paul Bert à Rennes</p>
+									</li>
+									<li>
+										<p id="Desc">Pendant 7 ans</p>
+									</li>
+									</ul>
+								</li>
+							</ul>
+							<ul id="article">
+								<li id="date">
+									<p>Gym</p>
+								</li>
+								<li>
+									<p id="point">°</p>
+								</li>
+								<li>
+									<ul id="bloc">
+									<li>
+										<p>course à pieds, musculation</p>
+									</li>
+									<li>
+										<p id="Desc">Régulierement</p>
+									</li>
+									</ul>
+								</li>
+							</ul>
+							<ul id="article">
+									<li id="date">
+										<p>Divers</p>
+									</li>
+									<li>
+										<p id="point">°</p>
+									</li>
+									<li>
+										<ul id="bloc">
+										<li>
+											<p>Activités sportives scolaires</p>
+										</li>
+										<li>
+											<p id="Desc">Aviron, Boxe française, escalade</p>
+										</li>
+										</ul>
+									</li>
+								</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li id="titre">
+							<p>Loisirs</p>
+						</li>
+						<li id= "Scroll">
+								<ul id="article">
+									<li id="date">
+										<p>Lecture</p>
+									</li>
+									<li>
+										<p id="point">°</p>
+									</li>
+									<li>
+										<ul id="bloc">
+										<li>
+											<p>Romans de Fantastique</p>
+										</li>
+										<li>
+											<p id="Desc">Robin Hobb, Goeorge RR Martin</p>
+										</li>
+										</ul>
+									</li>
+								</ul>
+								<ul id="article">
+									<li id="date">
+										<p>Films</p>
+									</li>
+									<li>
+										<p id="point">°</p>
+									</li>
+									<li>
+										<ul id="bloc">
+										<li>
+											<p>Films de science fiction</p>
+										</li>
+										<li>
+											<p id="Desc">auteur</p>
+										</li>
+										</ul>
+									</li>
+								</ul>
+								<ul id="article">
+									<li id="date">
+										<p>Voyages Touristiques</p>
+									</li>
+									<li>
+										<p id="point">°</p>
+									</li>
+									<li>
+										<ul id="bloc">
+										<li>
+											<p>Grèce, Espagne, Italie, Maroc, Canada</p>
+										</li>
+										<li>
+											<p id="Desc">Avec mes amis, ma famille</p>
+										</li>
+										</ul>
+									</li>
+								</ul>
+								<ul id="article">
+										<li id="date">
+											<p>Séjours Linguistiques</p>
+										</li>
+										<li>
+											<p id="point">°</p>
+										</li>
+										<li>
+											<ul id="bloc">
+											<li>
+												<p>Etats-Unis, angleterre</p>
+											</li>
+											<li>
+												<p id="Desc">En famille d'acceuil</p>
+											</li>
+											</ul>
+										</li>
+									</ul>
+							</li>
+					</ul>
+				</li>
+		</ul>
+		</li>
+</ul>
+
+</body>
+
+<footer>
+	<p>all right reserved</p>
+</footer>
+</html>
+
+
