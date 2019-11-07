@@ -13,7 +13,7 @@ overflow: hidden;
 background-color: rgb(47, 70, 121);
 font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 width:100%;
-height:17vh;
+height:17vmin;
 margin-bottom:50px;
 position: fixed;
 z-index: 100;
